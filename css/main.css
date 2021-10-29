@@ -1,0 +1,544 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    background: url(../img/bg-img.jpg) repeat fixed;
+    background-size: cover;
+}
+/* navigation */
+.nav-container{
+    width: 100%;
+    background: url(../img/bg-img.jpg) repeat fixed;
+    background-position: top;
+    background-size: cover;
+    position: sticky;
+    top: 0;
+    z-index: 99999;
+}
+.navigation{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+.nav-left,
+.menu,
+.search-bar,
+.logo-container,
+.profile,
+.tap,
+.search-circle,
+.search-icon-container,
+.banner,
+.movies-block,
+.container,
+.card,
+.movie-title,
+.feature,
+.top-feature,
+.top-right,
+.small-container,
+.buttom-btn,
+.content,
+.arrow,
+.arrow-circle,
+.see-more-container,
+.see-more,
+.login-container,
+.input-container,
+.signup-container,
+.img-container,
+.input-icon{
+    display: flex;
+    align-items: center;
+}
+.logo-container{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    background: #d50000;
+}
+.logo-container img{
+    height: 80%;
+}
+.nav-left .name{
+    margin: 9px 0 0 10px;
+    font-size: 55px;
+    color: white;
+    font-family: 'Teko', sans-serif;
+}
+.menu{
+    margin: auto 0;
+}
+.menu .tap{
+    justify-content: center;
+    padding: 2px 25px 2px 25px;
+    border-radius: 25px;
+}
+.menu .tap a{
+    text-decoration: none;
+    font-size: 29px;
+    font-weight: bold;
+    font-family: 'Teko', sans-serif;
+    color: white;
+    letter-spacing: 1px;
+}
+.active{
+    background: #d50000;
+}
+.menu .color:hover{
+    color: #d50000;
+}
+.profile{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    justify-content: center;
+}
+.profile a{
+    text-decoration: none;
+}
+.profile a i{
+    color: white;
+    font-size: 35px;
+}
+.search-bar .search-box{
+    padding: 15px 0px 15px 20px;
+    width: 380px;
+    border-radius: 30px 0 0 30px;
+    border: none;
+    outline: none;
+}
+.search-bar{
+    margin-right: 20px;
+}
+.search-bar .search-icon-container{
+    height: 45px;
+    width: 50px;
+    border-radius: 0 30px 30px 0;
+    justify-content: center;
+    background: white;
+}
+.search-circle{
+    justify-content: center;
+    border: solid 2px rgb(180, 180, 180);
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.search-circle:hover{
+    background: rgb(241, 241, 241);
+}
+.search-bar .search-circle i{
+    color: rgb(180, 180, 180);
+}
+
+/* banner */
+.banner{
+    flex-direction: column;
+    margin: auto;
+    width: 95%;
+    margin-top: 80px;
+}
+.movies-block{
+    width: 100%;
+    flex-direction: column;
+    margin: 0 0 70px 0;
+}
+.movies-block .content{
+    justify-content: space-between;
+    background: #d50000;
+    width: 100%;
+    border-radius: 7px;
+}
+.content .arrow{
+    justify-content: space-between;
+    width: 100px;
+    margin-right: 20px;
+}
+.arrow-circle{
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.arrow-circle:hover{
+    background: rgb(253, 253, 253);
+}
+.arrow .arrow-circle i{
+    font-size: 45px;
+    color: white;
+    cursor: pointer;
+}
+.arrow .arrow-circle i:hover{
+    color: black;
+}
+.content p{
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    padding: 0 0 0 30px;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+}
+.container{
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    margin-top: 3px;
+    flex-direction: column;
+    width: 270px;
+}
+.container .card img{
+    width: 100%;
+    height: 520px;
+}
+.container .card .movie-title{
+    width: 100%;
+    justify-content: flex-start;
+}
+.container .card .movie-title p{
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 1px;
+    font-size: x-large;
+    padding: 5px 0 5px 0;
+    color: white;
+}
+.card .btn{
+    width: 100%;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    border: none;
+    background: #d50000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+.card .btn:hover{
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.banner .see-more-container{
+    justify-content: flex-end;
+    width: 100%;
+    position: relative;
+    top: -50px;
+    right: -8px;
+}
+.see-more-container .see-more{
+    cursor: pointer;
+}
+.see-more p{
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+}
+.see-more i{
+    margin: 0;
+    font-size: 30px;
+    color: white;
+}
+
+/* feature */
+.feature{
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+    height: 550px;
+    background: rgba(52, 70, 90, 0.986);
+    background-image: url(../img/feature.png);
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+.feature .top-feature{
+    margin-top: 20px;
+    justify-content: space-between;
+    width: 90%;
+}
+.top-feature p{
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+    font-size: 60px;
+    font-weight: bolder;
+    letter-spacing: 2px;
+    color: white;
+}
+.top-feature .top-right .feature-btn{
+    padding: 15px 30px 15px 30px;
+    font-size: large;
+    font-weight: bolder;
+    margin: 0 0 0 10px;
+    cursor: pointer;
+}
+.top-right .log-btn{
+    background: none;
+    color: white;
+    border: solid 1px white;
+}
+.top-right .sign-btn{
+    background: #d50000;
+    border: solid 1px #d50000;
+    color: white;
+}
+.sign-btn:hover{
+    background: #af0000;
+}
+.log-btn:hover{
+    background: rgb(180, 180, 180);
+}
+.buttom-btn .watch-movie:hover{
+    background: #af0000;
+}
+.buttom-btn .view-info:hover{
+    background: #af0000;
+}
+.feature .desc{
+    width: 90%;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.desc .big-text{
+    color: white;
+    margin: 0;
+    font-weight: bold;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.desc .big-text .span-1{
+    font-weight: bolder;
+    font-size: 70px;
+}
+.desc .big-text .span-2{
+    color: #d50000;
+}
+.small-container .small-text{
+    margin: 0;
+    font-family: 'Teko', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 20px;
+    padding: 0 20px 0 0;
+    color: white;
+}
+.buttom-btn .bt-btn{
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: large;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+    padding: 10px 30px 10px 30px;
+    margin: 0 10px 0 0;
+    color: white;
+    cursor: pointer;
+}
+.buttom-btn .watch-movie{
+    background: #d50000;
+    border: solid 1px #d50000;
+}
+.buttom-btn .view-info{
+    border: solid 1px #d50000;
+    background: none;
+}
+
+/* account */
+.content-2{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-container{
+    flex-direction: column;
+    width: 800px;
+    background: white;
+}
+.login-container .account-icon{
+    font-size: 200px;
+    color: black;
+}
+.login-container .input-container{
+    justify-content: space-between;
+    flex-direction: column;
+    height: 200px;
+}
+.input-container .input-icon{
+    background: white;
+    width: 100%;
+    border: solid 1px #d50000;
+}
+.input-icon i{
+    border-right: solid 1px #d50000;
+    font-size: 30px;
+    padding: 5px 10px 5px 10px;
+}
+.input-container input{
+    font-size: 16px;
+    padding: 17px 0 17px 20px;
+    border: none;
+    outline: none;
+    width: 450px;
+    box-sizing: border-box;
+}
+.input-container .login-btn{
+    padding: 10px 100px 10px 100px;
+    font-size: large;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: #d50000;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.input-container .login-btn:hover{
+    background: #af0000;
+}
+.signup-container{
+    flex-direction: column;
+}
+.img-container img{
+    width: 50px;
+    margin: 0 20px 20px 20px;
+    cursor: pointer;
+}
+
+/* play-list */
+.play-list-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    width: 95%;
+    margin-bottom: 70px;
+}
+.all-play-list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+}
+.play-list-container .play-list{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+.play-list .content-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #d50000;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+.content-list p{
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Teko', sans-serif;
+    letter-spacing: 2px;
+}
+.play-list .play-list-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.play-list-card .card{
+    margin-top: 0px;
+    flex-direction: column;
+    width: 270px;
+}
+.play-list-card .card img{
+    width: 100%;
+    height: 520px;
+}
+
+.play-list .btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Teko', sans-serif;
+    font-size: 25px;
+    border: none;
+    background: #d50000;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin-top: 5px;
+}
+.play-list .btn:hover{
+    background: #af0000;
+}
+
+/* footer */
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    background: black;
+    border-top: solid 5px #d50000;
+}
+footer .footer-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+.footer-menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    padding: 7px;
+    letter-spacing: 1px;
+}
+.footer-menu a:hover{
+    letter-spacing: 3px;
+    font-weight: bold;
+}
+.footer-menu p{
+    margin: 0;
+    color: #d50000;
+    font-size: 16px;
+    padding: 7px;
+}
+footer .footer-contact{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 20px 0 35px 0;
+}
+.footer-contact .contact-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-link img{
+    width: 40px;
+}
+.contact-link a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 0 0 0 5px;
+}
+.contact-link a:hover{
+    color: #d50000;
+}
